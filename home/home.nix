@@ -1,7 +1,7 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, lib, ... }:
 {
   imports = [
-#$    ./services/colima.nix
+    ./zed.nix
   ];
   home = {
     username = "lucasmendescampos";

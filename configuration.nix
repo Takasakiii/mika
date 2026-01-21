@@ -9,7 +9,7 @@
   nix.extraOptions = ''
     extra-platforms = x86_64-darwin aarch64-darwin
   '';
-  
+
   programs = {
     zsh = {
       enable = true;
@@ -22,6 +22,9 @@
       mkalias
       nh
       nvd
+      zed-editor
+      nil
+      nixd
     ];
     shells = [
       pkgs.zsh
@@ -61,5 +64,5 @@
       sudo xcodebuild -license accept || true
     fi
   '';
-   
+
 }
